@@ -1,22 +1,30 @@
-body {
+*{
+    box-sizing: border-box;
+}
+
+
+.container {
   height: 100vh;
   background-color: aquamarine;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.container__main {
-  background-color: brown;
   text-align: center;
   padding: 1.4rem;
   border-radius: 1rem 1.5rem;
-    
 }
-.container__main a{
-    text-decoration: none;
-    color: chartreuse;
+.container__block {
+  display: flex;
+  flex-direction: column;
+  
 }
-
-
-
-
+.container__btn a {
+    background-color: crimson;
+    padding: 1rem;
+  text-decoration: none;
+  color: chartreuse;
+}
+.container__btn i {
+  text-decoration: none;
+  color: rgb(6, 43, 41);
+}
