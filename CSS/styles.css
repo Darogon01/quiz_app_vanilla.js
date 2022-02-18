@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__main {
+  background-color: brown;
+  text-align: center;
+  padding: 1.4rem;
+  border-radius: 1rem 1.5rem;
+    
+}
+a{
+    text-decoration: none;
+    color: chartreuse;
+}
