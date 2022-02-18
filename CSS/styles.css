@@ -12,7 +12,11 @@ body {
   border-radius: 1rem 1.5rem;
     
 }
-a{
+.container__main a{
     text-decoration: none;
     color: chartreuse;
 }
+
+
+
+
