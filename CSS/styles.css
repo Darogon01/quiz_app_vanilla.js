@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,11 +8,9 @@ html {
 }
 h1 {
   font-size: 6rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: beige;
-  margin: 1rem;
-  
-  
+  margin: 0;
 }
 
 .container {
@@ -24,36 +22,36 @@ h1 {
   justify-content: center;
 }
 
-.container__block {
+.container__start {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
- 
+  row-gap: 1rem;
 }
 
 .container__btn {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container__btn button {
   height: 10rem;
   width: 20rem;
   background-color: crimson;
-  border-radius: 0.8rem 0.5rem;
-  margin: 1rem;
-}
-
-.container__btn a {
-  text-decoration: none;
+  border-radius: 1rem 0.2rem;
+  border: none;
   color: rgb(199, 255, 221);
   font-size: 3rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
+  cursor: pointer;
 }
-.container__btn:hover{
-  background: rgb(236, 98, 126) ;
+.container__btn button:hover {
+  background: rgb(236, 98, 126);
+  color: aqua;
+  
 }
 
 .container__btn i {
