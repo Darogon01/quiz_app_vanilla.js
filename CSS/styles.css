@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 6rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: beige;
+  margin: 1rem;
+  
+  
+}
 
 .container {
+  width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  background-color: rgb(36, 29, 136);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,21 +28,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+
+ 
 }
 
 .container__btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
-  width: 8rem;
+  height: 10rem;
+  width: 20rem;
   background-color: crimson;
   border-radius: 0.8rem 0.5rem;
+  margin: 1rem;
 }
 
 .container__btn a {
   text-decoration: none;
-  color: chartreuse;
+  color: rgb(199, 255, 221);
+  font-size: 3rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}
+.container__btn:hover{
+  background: rgb(236, 98, 126) ;
 }
 
 .container__btn i {
