@@ -91,7 +91,7 @@ p {
 }
 
 .container__quizz {
-  width: 25rem;
+  width: 30rem;
   padding: 3rem;
   border-radius: 1rem;
   background-color: #dc143c;
@@ -111,7 +111,7 @@ p {
 .container__article button {
   background: aqua;
   color: #062b29;
-  width: 15rem;
+  width: 20rem;
   border-radius: 0.5rem;
   border: none;
   padding: 1rem 2rem;
