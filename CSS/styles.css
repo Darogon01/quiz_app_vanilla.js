@@ -1,22 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 
+/* <---------estilos generales---------> */
+/* el root de paleta de colores no esta elegido. Los colores son de muestra */
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
 }
-h1 {
-  font-size: 6rem;
+h1,
+h2,
+h3 {
   font-family: "Fira Sans", sans-serif;
   color: beige;
   margin: 0;
 }
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
 
+/* <---------index startquiz---------> */
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(36, 29, 136);
+  background-color: #241d88;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +45,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  row-gap: 1rem;
+  row-gap: 3rem;
 }
 
 .container__btn {
@@ -37,24 +55,98 @@ h1 {
 }
 
 .container__btn button {
-  height: 10rem;
+  height: 8rem;
   width: 20rem;
-  background-color: crimson;
+  background-color: #dc143c;
   border-radius: 1rem 0.2rem;
   border: none;
-  color: rgb(199, 255, 221);
+  color: #c7ffdd;
   font-size: 3rem;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
 .container__btn button:hover {
-  background: rgb(236, 98, 126);
-  color: aqua;
-  
+  background: #ec627e;
+  color: #00ffff;
 }
 
 .container__btn i {
   text-decoration: none;
-  color: rgb(6, 43, 41);
+  color: #062b29;
+}
+
+/* <---------gamequiz---------> */
+
+.container__header {
+  background-color: #241d88;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.container__quizz {
+  width: 25rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: #dc143c;
+}
+.container__secction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+.container__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+.container__article button {
+  background: aqua;
+  color: #062b29;
+  width: 15rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem 2rem;
+}
+.container__article button:hover {
+  background: rgb(130, 255, 213);
+  cursor: pointer;
+}
+
+/* -----respnsive media queries------ */
+
+
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+  h1 {
+    font-size: 8rem;
+  }
+  .container__btn button {
+    height: 10rem;
+    width: 24rem;
+    font-size: 3.5rem;
+  }
+  .container__quizz {
+    width: 40rem;
+  }
+  .container__article button {
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+  }
+  .container__btn button {
+    height: 10rem;
+    width: 24rem;
+    font-size: 3.5rem;
+  }
 }
